@@ -3,8 +3,7 @@ create database hw-3;
 create table developers (
   id_developer int not null auto_increment,
   dev_name varchar(45) not null,
-  dev_age int default null,
-  dev_skills int default null,
+  dev_age int default null,  
   id_company int default null,
   primary key (id_developer),
   foreign key (id_company) references companies (id_company)
@@ -13,7 +12,7 @@ create table developers (
 create table skills (
   id_skill int unsigned not null auto_increment,
   skills_field varchar(45) default null,
-  skills_description varchar(45) default null,
+  skills_level varchar(45) default null,
   primary key (id_skill)
 );
 

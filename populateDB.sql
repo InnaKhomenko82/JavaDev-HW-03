@@ -6,10 +6,10 @@ insert into developers values
 (3,'Vasyl',30,10,3);
 
 insert into skills values
-(10,'Java',NULL),
-(11,'C++',NULL),
-(12,'C#',NULL),
-(13,'JS',NULL);
+(10,'Java','junior'),
+(11,'C++','middle'),
+(12,'C#','junior'),
+(13,'JS','senior');
 
 insert into projects values
 (1,'ShedullerBot','2005-05-20'),
