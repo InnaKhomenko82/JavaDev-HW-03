@@ -1,9 +1,14 @@
 use hw-3
 
+insert into companies values
+(1,'GoIT',1000),
+(2,'EPAM',10000),
+(3,'DigiCODE',500);
+
 insert into developers values
-(1,'Ivan',20,12,1),
-(2,'Petro',25,13,2),
-(3,'Vasyl',30,10,3);
+(1,'Ivan',20,1),
+(2,'Petro',25,2),
+(3,'Vasyl',30,3);
 
 insert into skills values
 (10,'Java','junior'),
@@ -16,11 +21,6 @@ insert into projects values
 (2,'NavigationBot','2006-06-20'),
 (3,'TrainingBot','2007-07-20'),
 (4,'LectionBot','2008-08-20');
-
-insert into companies values
-(1,'GoIT',1000),
-(2,'EPAM',10000),
-(3,'DigiCODE',500);
 
 insert into customers values
 (1,'NUPP','regular'),
