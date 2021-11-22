@@ -23,8 +23,16 @@ update `hw-3`.`projects` set `cost` = 20000 where (`id_project` = 2);
 update `hw-3`.`projects` set `cost` = 25000 where (`id_project` = 3);
 update `hw-3`.`projects` set `cost` = 30000 where (`id_project` = 4);
 
-/*select p.project_name, min(p.`cost`) as minProjectCost
+/*select p.project_name, min(p.`cost`) as projectCost
 from `hw-3`.`projects` p
 group by p.project_name
-order by minProjectCost
+order by projectCost
 limit 1;*/
+
+select p.project_name, min(p.`cost`) as projectCost, avg(d.`salary`) as avgSalary
+from `hw-3`.`projects` p
+inner join `hw-3`.`developers_projects` dp on p.`id_project` = dp.`project_id`
+inner join `hw-3`.`developers` d on d.`id_developer` = dp.`developer_id`
+group by p.project_name
+order by projectCost
+limit 1;
